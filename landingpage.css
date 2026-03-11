@@ -28,6 +28,7 @@ nav{
     color: #222;
     font-size: 1.2em;
 }
+
 .button-icon button{
     padding: 10px 12px;
     border-radius: 5px;
@@ -41,4 +42,28 @@ nav{
 }
 .fa-bars{
     display: none;
+}
+
+/* --media-query-- */
+
+@media(max-width:732px){
+    .menu-list{
+        display: none;
+    }
+    nav{
+        justify-content: space-between;
+    }
+    .button-icon{
+        display:flex;
+        align-items: center;
+        gap: 1em;
+    }
+    .fa-bars{
+        display: block;
+        font-size: 2em;
+        color: #F08944;
+    }
+    .button-icon button{
+        display: none;
+    }
 }
